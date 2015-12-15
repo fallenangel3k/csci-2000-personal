@@ -4,7 +4,7 @@
 # except the two header lines?
 # Enter the relevant Unix command(s) used below.
 
-
+cat classlist.csv | tail -n +3
 
 
 # part (b)
@@ -13,7 +13,7 @@
 # Enter the relevant Unix command(s) used below as well as the number
 # of students in the list.
 
-
+cat classlist.csv | tail -n +3 | wc -l
 
 
 # part (c)
@@ -24,7 +24,7 @@
 # Enter the relevant Unix command(s) used below as well as the names
 # of the first and last students in the new list.
 
-
+cat classlist.csv | tail -n +3 | sort --key=1.11
 
 
 # part (d)
@@ -33,7 +33,7 @@
 # repeated in the class list?
 # Enter the relevant name(s) and the Unix command(s) below.
 
-
+cat classlist.csv | tail -n +3 | cut -f 3 --delimiter , | uniq -d
 
 
 # part (f) [BONUS]
