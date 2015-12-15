@@ -41,3 +41,8 @@ cat classlist.csv | tail -n +3 | cut -f 3 --delimiter , | uniq -d
 # the student number and the first character of the first name to make
 # a four-character identifier for each student.
 # Enter the relevant Unix command(s) used below.
+
+
+cat classlist.csv | tail -n +3 | cut -c 7-9
+
+cat classlist.csv | tail -n +3 | cut -f 3 --delimiter , | cut -c -1
